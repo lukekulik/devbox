@@ -15,6 +15,7 @@ Following the release of OS X 10.9 Apple included AVX instruction set support in
 
 
 To remove cached files and free up some disk space do:
+
       brew cleanup
       brew cask cleanup
       
