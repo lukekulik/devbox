@@ -9,3 +9,12 @@ Following the release of OS X 10.9 Apple included AVX instruction set support in
       brew tap homebrew/science # a lot of cool formulae for scientific tools
       brew tap homebrew/python # numpy, scipy, matplotlib, ...
       brew update && brew upgrade
+      
+      
+~brew cask
+
+
+To remove cached files and free up some disk space do:
+      brew cleanup
+      brew cask cleanup
+      
