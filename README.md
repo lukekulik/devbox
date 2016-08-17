@@ -19,3 +19,9 @@ To remove cached files and free up some disk space do:
       brew cleanup
       brew cask cleanup
       
+
+For additional speedup when solving sparse linear systems in SciPy (with UMFPACK):
+
+      brew install suite-sparse
+      pip install scikit-umfpack
+      
