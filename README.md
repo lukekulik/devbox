@@ -13,6 +13,14 @@ Following the release of OS X 10.9 Apple included AVX instruction set support in
       
 ~brew cask
 
+To extend the Python functionality, install the following packages. Use pip3 if using Python3 .
+
+      pip install virtualenv  # encapsulated environments support
+      pip install pandas      # data structures
+      pip install sympy       # 
+      pip install matplotlib  # plotting support
+      
+      
 
 To remove cached files and free up some disk space do:
 
