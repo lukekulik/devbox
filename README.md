@@ -1,11 +1,11 @@
 # devbox
-Commands to get you up and running on OS X
+Commands to get you up and running on OS X. Before starting anything else install XCode.
+
+Step 0: install brew
 
 
-Following the release of OS X 10.9 Apple included AVX instruction set support in Accelerate framework - resulting in performance on par with Intel MKL. As of the time of writing, OpenBLAS does not support AVX and is slower. 
 
-First install brew from here. # add link
-
+      brew analytics off # prevent brew from sending analytics home
       brew tap homebrew/science # a lot of cool formulae for scientific tools
       brew tap homebrew/python # numpy, scipy, matplotlib, ...
       brew update && brew upgrade
@@ -33,7 +33,7 @@ To extend the Python functionality, install the following packages. Use pip3 if 
       
       
       
-      brew cask install transmission
+      brew cask install transmission # cask installation will happen automatically on first call
       brew cask install vlc          
       brew cask install atom
       brew cask install torbrowser
@@ -54,4 +54,8 @@ For additional speedup when solving sparse linear systems in SciPy (with UMFPACK
 
       brew install suite-sparse
       pip install scikit-umfpack
+      
+Following the release of OS X 10.9 Apple included AVX instruction set support in Accelerate framework - resulting in performance on par with Intel MKL. As of the time of writing, OpenBLAS does not support AVX and is slower. 
+
+
       
