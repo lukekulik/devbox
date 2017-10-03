@@ -57,5 +57,14 @@ For additional speedup when solving sparse linear systems in SciPy (with UMFPACK
       
 Following the release of OS X 10.9 Apple included AVX instruction set support in Accelerate framework - resulting in performance on par with Intel MKL. As of the time of writing, OpenBLAS does not support AVX and is slower. 
 
+Install zsh using brew
 
+then
+
+$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+edit ~/.zshrc
+
+ZSH_THEME=pygmalion
+plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
       
