@@ -31,7 +31,7 @@ To extend the Python functionality, install the following packages. Use pip3 if 
       pip install pandas      # data structures
       pip install sympy       # 
       pip install matplotlib  # plotting support
-      
+      pip install jupyter
       
       
       brew cask install transmission # cask installation will happen automatically on first call
