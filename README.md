@@ -33,6 +33,8 @@ To extend the Python functionality, install the following packages. Use pip3 if 
       pip install matplotlib  # plotting support
       pip install jupyter
       
+      pip3 install matplotlib
+      
       
       brew cask install transmission # cask installation will happen automatically on first call
       brew cask install vlc          
