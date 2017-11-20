@@ -19,6 +19,7 @@ Step 0: install brew
       brew install python
       brew install python3
       brew install cmake
+      brew install docker
 
       brew install numpy --with-python3
       brew install scipy --with-python3
