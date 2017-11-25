@@ -3,8 +3,6 @@ Commands to get you up and running on OS X. Before starting anything else instal
 
 Step 0: install brew
 
-
-
       brew analytics off # prevent brew from sending analytics home
       brew tap homebrew/science # a lot of cool formulae for scientific tools
       brew tap homebrew/python # numpy, scipy, matplotlib, ...
@@ -14,17 +12,15 @@ Step 0: install brew
       brew install ffmpeg
       brew install node
       brew install youtube-dl
-
       
       brew install python
       brew install python3
       brew install cmake
       brew install docker
+      brew install zsh
 
       brew install numpy --with-python3
       brew install scipy --with-python3
-
-~brew cask
 
 To extend the Python functionality, install the following packages. Use pip3 if using Python3 .
 
@@ -33,9 +29,11 @@ To extend the Python functionality, install the following packages. Use pip3 if 
       pip install sympy       # 
       pip install matplotlib  # plotting support
       pip install jupyter
+      pip install bcolz
+      # pip uninstall -y pillow # only if pillow is already installed
+      CC="cc -mavx2" pip install -U --force-reinstall pillow-simd # high performance pillow library
       
       pip3 install matplotlib
-      
       
       brew cask install transmission # cask installation will happen automatically on first call
       brew cask install vlc          
@@ -43,6 +41,9 @@ To extend the Python functionality, install the following packages. Use pip3 if 
       brew cask install torbrowser
       (also available: mactex, dropbox, spotify, google-chrome)
       
+Change shell client for a more powerful one:
+
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"     
 
 To remove cached files and free up some disk space do:
 
@@ -53,22 +54,9 @@ For period maintenance run:
 
       brew update && brew outdated && brew upgrade --all
 
-
 For additional speedup when solving sparse linear systems in SciPy (with UMFPACK):
 
       brew install suite-sparse
       pip install scikit-umfpack
       
 Following the release of OS X 10.9 Apple included AVX instruction set support in Accelerate framework - resulting in performance on par with Intel MKL. As of the time of writing, OpenBLAS does not support AVX and is slower. 
-
-Install zsh using brew
-
-then
-
-$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-
-edit ~/.zshrc
-
-ZSH_THEME=pygmalion
-plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
-      
