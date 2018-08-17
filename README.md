@@ -1,11 +1,9 @@
 # devbox
 Commands to get you up and running on OS X. Before starting anything else install XCode.
 
-Step 0: install brew
-
+      /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      
       brew analytics off # prevent brew from sending analytics home
-      brew tap homebrew/science # a lot of cool formulae for scientific tools
-      brew tap homebrew/python # numpy, scipy, matplotlib, ...
       brew update && brew upgrade
       
       brew install wget
@@ -13,23 +11,24 @@ Step 0: install brew
       brew install node
       brew install youtube-dl
       
-      brew install python
       brew install python3
+      brew install python@2
       brew install cmake
       brew install docker
       brew install zsh
+      brew install tmux
+      brew install htop
+      brew install watch
 
       brew install numpy --with-python3
       brew install scipy --with-python3
 
 To extend the Python functionality, install the following packages. Use pip3 if using Python3 .
 
-      pip install virtualenv  # encapsulated environments support
       pip install pandas      # data structures
-      pip install sympy       # 
       pip install matplotlib  # plotting support
       pip install jupyter
-      pip install bcolz
+      pip install sklearn
       # pip uninstall -y pillow # only if pillow is already installed
       CC="cc -mavx2" pip install -U --force-reinstall pillow-simd # high performance pillow library
       
@@ -38,7 +37,8 @@ To extend the Python functionality, install the following packages. Use pip3 if 
       brew cask install transmission # cask installation will happen automatically on first call
       brew cask install vlc          
       brew cask install atom
-      brew cask install torbrowser
+      brew cask install omnifocus
+      brew cask install google-chrome
       (also available: mactex, dropbox, spotify, google-chrome)
       
 Change shell client for a more powerful one:
