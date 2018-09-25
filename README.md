@@ -59,4 +59,8 @@ For additional speedup when solving sparse linear systems in SciPy (with UMFPACK
       brew install suite-sparse
       pip install scikit-umfpack
       
+Fix annoyances:
+
+      defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
 Following the release of OS X 10.9 Apple included AVX instruction set support in Accelerate framework - resulting in performance on par with Intel MKL. As of the time of writing, OpenBLAS does not support AVX and is slower. 
