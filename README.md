@@ -5,41 +5,17 @@ Commands to get you up and running on OS X. Before starting anything else instal
       
       brew analytics off # prevent brew from sending analytics home
       brew update && brew upgrade
-      
-      brew install wget
-      brew install ffmpeg
-      brew install node
-      brew install youtube-dl
-      
-      brew install python3
-      brew install python@2
-      brew install cmake
-      brew install docker
-      brew install zsh
-      brew install tmux
-      brew install htop
-      brew install watch
-
-      brew install numpy --with-python3
-      brew install scipy --with-python3
+      brew install wget ffmpeg youtube-dl python3 python@2 cmake docker vim zsh tmux htop watch numpy scipy
 
 To extend the Python functionality, install the following packages. Use pip3 if using Python3 .
 
-      pip install pandas      # data structures
-      pip install matplotlib  # plotting support
-      pip install jupyter
-      pip install sklearn
+      pip install pandas matplotlib jupyter sklearn
+      pip3 install pandas matplotlib jupyter sklearn
+
       # pip uninstall -y pillow # only if pillow is already installed
       CC="cc -mavx2" pip install -U --force-reinstall pillow-simd # high performance pillow library
       
-      pip3 install matplotlib
-      
-      brew cask install transmission # cask installation will happen automatically on first call
-      brew cask install vlc          
-      brew cask install atom
-      brew cask install omnifocus
-      brew cask install google-chrome
-      (also available: mactex, dropbox, spotify, google-chrome)
+      brew cask install transmission vlc sublime-text omnifocus 1password google-chrome dropbox
       
 Change shell client for a more powerful one:
 
@@ -48,14 +24,14 @@ Change shell client for a more powerful one:
 To remove cached files and free up some disk space do:
 
       brew cleanup
-      brew cask cleanup
       
-For period maintenance run:
+For periodic maintenance run:
 
       brew update && brew outdated && brew upgrade --all
 
 For additional speedup when solving sparse linear systems in SciPy (with UMFPACK):
 
+      brew install swig
       brew install suite-sparse
       pip install scikit-umfpack
       
