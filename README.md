@@ -7,12 +7,13 @@ Commands to get you up and running on OS X. Before starting anything else instal
       brew update && brew upgrade
       brew install wget ffmpeg youtube-dl python3 python@2 cmake docker vim zsh tmux htop watch numpy scipy
 
-To extend the Python functionality, install the following packages. Use pip3 if using Python3 .
+To extend the Python functionality, install the following packages.
 
       pip install pandas matplotlib jupyter sklearn
       pip3 install pandas matplotlib jupyter sklearn
 
       # pip uninstall -y pillow # only if pillow is already installed
+      # install zlib from source (https://www.zlib.net/zlib-1.2.11.tar.gz) on macOS Mojave
       CC="cc -mavx2" pip install -U --force-reinstall pillow-simd # high performance pillow library
       
       brew cask install transmission vlc sublime-text omnifocus 1password google-chrome dropbox
